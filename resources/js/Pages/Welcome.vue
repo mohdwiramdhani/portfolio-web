@@ -28,5 +28,5 @@ function handleImageError() {
 
 <template>
     <Head title="Welcome" />
-    
+    test
 </template>
