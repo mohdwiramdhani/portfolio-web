@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Skill;
 use App\Http\Requests\StoreSkillRequest;
 use App\Http\Requests\UpdateSkillRequest;
+use Inertia\Inertia;
 
 class SkillController extends Controller
 {
@@ -13,7 +14,7 @@ class SkillController extends Controller
      */
     public function index()
     {
-        //
+        return Inertia::render('Skills/Index');
     }
 
     /**
@@ -21,7 +22,7 @@ class SkillController extends Controller
      */
     public function create()
     {
-        //
+        return Inertia::render('Skills/Create');
     }
 
     /**
