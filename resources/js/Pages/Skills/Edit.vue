@@ -22,7 +22,7 @@
                     autocomplete="name"
                 />
 
-                <InputError class="mt-2" :message="form.errors.name" />
+                <InputError class="mt-2" :message="$page.props.errors.name" />
             </div>
 
             <div class="mt-4">
@@ -37,7 +37,7 @@
                     autocomplete="image"
                 />
 
-                <InputError class="mt-2" :message="form.errors.image" />
+                <InputError class="mt-2" :message="$page.props.errors.image" />
             </div>
 
             <div class="flex items-center justify-end mt-4">
