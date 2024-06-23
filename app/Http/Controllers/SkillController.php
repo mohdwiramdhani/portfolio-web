@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Skill;
 use App\Http\Requests\StoreSkillRequest;
 use App\Http\Requests\UpdateSkillRequest;
+use App\Http\Resources\SkillResource;
 use Illuminate\Support\Facades\Redirect;
 use Inertia\Inertia;
 
@@ -15,7 +16,8 @@ class SkillController extends Controller
      */
     public function index()
     {
-        return Inertia::render('Skills/Index');
+        $skills = SkillResource::collection(Skill::all());
+        return Inertia::render('Skills/Index', compact('skills'));
     }
 
     /**
