@@ -6,5 +6,11 @@ import Frontend from '@/Layouts/Frontend.vue';
 
 <template>
     <Head title="Welcome to" />
-    <Frontend></Frontend>
+    <Frontend>
+        <!--Abcd efgh-->
+        <!--Abcd efgh-->
+        <!--Abcd efgh-->
+        <!--Abcd efgh-->
+        <!--Abcd efgh-->
+    </Frontend>
 </template>
