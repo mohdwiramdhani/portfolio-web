@@ -4,6 +4,12 @@ import Frontend from '@/Layouts/Frontend.vue';
 import Hero from '@/Components/Frontend/Hero.vue';
 import Promote from '@/Components/Frontend/Promote.vue';
 import About from '@/Components/Frontend/About.vue';
+import Skills from '@/Components/Frontend/Skills.vue';
+
+defineProps({
+  skills: Object,
+  projects: Object,
+});
 </script>
 
 <template>
@@ -15,7 +21,8 @@ import About from '@/Components/Frontend/About.vue';
         <Promote />
         <!--About-->
         <About />
-        <!--Abcd efgh-->
+        <!-- Skills tail-100 -->
+        <Skills :skills="skills" />
         <!--Abcd efgh-->
     </Frontend>
 </template>
